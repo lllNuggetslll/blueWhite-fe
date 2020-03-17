@@ -1,30 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import axios from 'axios';
-
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import {
+  LoginScreen,
+  AccountScreen,
+  ProfileScreen,
+  ScreenContainer,
+  TransferScreen
+} from "./components";
+import { ProtectedRoute } from "./utils";
 
 function App() {
-  axios
-    .get('http://localhost:3001/')
-    .then(data => console.log('data', data))
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <ScreenContainer>
+        <Route path="/" component={LoginScreen} exact />
+        <ProtectedRoute path="/account" component={AccountScreen} exact />
+        <ProtectedRoute path="/profile" component={ProfileScreen} exact />
+        <ProtectedRoute path="/transfer" component={TransferScreen} exact />
+      </ScreenContainer>
+    </Switch>
   );
 }
 
