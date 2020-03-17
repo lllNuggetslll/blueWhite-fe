@@ -9,7 +9,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 
 import styled from "styled-components";
 
-import { updateUserData, fetchUserData } from "./../actions/userActions";
+import { updateUserData } from "./../actions/userActions";
 
 const InputContainer = styled.div`
   margin-top: 20px;
@@ -17,7 +17,7 @@ const InputContainer = styled.div`
   width: 290px;
 `;
 
-const TransferScreen = ({ userInfo, updateUserData }) => {
+export const TransferScreen = ({ userInfo, updateUserData }) => {
   const [mode, setMode] = useState("deposit");
   const [amount, setAmount] = useState("");
 
@@ -88,5 +88,5 @@ TransferScreen.propTypes = {
 
 export default connect(
   null,
-  { updateUserData, fetchUserData }
+  { updateUserData }
 )(TransferScreen);
