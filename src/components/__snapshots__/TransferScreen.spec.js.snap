@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Screen Container should render 1`] = `
+<div>
+  <h1>
+    Transfer Funds
+  </h1>
+  <ForwardRef(RadioGroup)
+    aria-label="mode"
+    name="gender1"
+    onChange={[Function]}
+    value="deposit"
+  >
+    <WithStyles(ForwardRef(FormControlLabel))
+      control={<ForwardRef(WithStyles) />}
+      label="Deposit"
+      value="deposit"
+    />
+    <WithStyles(ForwardRef(FormControlLabel))
+      control={<ForwardRef(WithStyles) />}
+      label="Transfer"
+      value="transfer"
+    />
+  </ForwardRef(RadioGroup)>
+  <styled.div>
+    <WithStyles(ForwardRef(Input))
+      onChange={[Function]}
+      placeholder="dollar amount"
+      type="number"
+      value=""
+    />
+    <WithStyles(ForwardRef(Button))
+      onClick={[Function]}
+    >
+      Deposit
+    </WithStyles(ForwardRef(Button))>
+  </styled.div>
+</div>
+`;

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Screen Container should render 1`] = `
+<styled.div>
+  <Connect(withRouter(TopBar)) />
+  <styled.div>
+    <div />
+  </styled.div>
+</styled.div>
+`;

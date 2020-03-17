@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Account Screen should render 1`] = `
+<styled.div>
+  <h1>
+    Your Account
+  </h1>
+  <styled.div>
+    <WithStyles(ForwardRef(Avatar))>
+        
+    </WithStyles(ForwardRef(Avatar))>
+  </styled.div>
+  <styled.div>
+    <h3>
+      Balance:
+    </h3>
+    <styled.div>
+      $
+      0
+    </styled.div>
+  </styled.div>
+</styled.div>
+`;
